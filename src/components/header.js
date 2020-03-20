@@ -3,17 +3,12 @@ import PropTypes from "prop-types"
 import React from "react"
 
 const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
+  <header className="bg-purple-800">
     <div
       style={{
         margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
+        maxWidth: 1280,
+        padding: `1em`,
       }}
     >
       <h1 style={{ margin: 0 }}>
@@ -22,9 +17,11 @@ const Header = ({ siteTitle }) => (
           style={{
             color: `white`,
             textDecoration: `none`,
+            fontSize: "20px",
           }}
         >
-          {siteTitle}
+          <h1 className="text-teal-400">Koronawirus COVID-19</h1>
+          <h2 className="text-sm">w Polsce i na świecie</h2>
         </Link>
       </h1>
     </div>
