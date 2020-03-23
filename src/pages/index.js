@@ -53,37 +53,37 @@ const IndexPage = () => {
           setChartData([
             {
               name: info[0].country,
-              zakażonych: info[0].cases,
+              Potwierdzonych: info[0].cases,
               zgonów: info[0].deaths,
               wyleczonych: info[0].recovered,
             },
             {
               name: info[1].country,
-              zakażonych: info[1].cases,
+              Potwierdzonych: info[1].cases,
               zgonów: info[1].deaths,
               wyleczonych: info[1].recovered,
             },
             {
               name: info[2].country,
-              zakażonych: info[2].cases,
+              Potwierdzonych: info[2].cases,
               zgonów: info[2].deaths,
               wyleczonych: info[2].recovered,
             },
             {
               name: info[3].country,
-              zakażonych: info[3].cases,
+              Potwierdzonych: info[3].cases,
               zgonów: info[3].deaths,
               wyleczonych: info[3].recovered,
             },
             {
               name: info[4].country,
-              zakażonych: info[4].cases,
+              Potwierdzonych: info[4].cases,
               zgonów: info[4].deaths,
               wyleczonych: info[4].recovered,
             },
             {
               name: info[5].country,
-              zakażonych: info[5].cases,
+              Potwierdzonych: info[5].cases,
               zgonów: info[5].deaths,
               wyleczonych: info[5].recovered,
             },
@@ -166,32 +166,32 @@ const IndexPage = () => {
           setChartTodayData([
             {
               name: byinfectedTodayArray[0].country,
-              zakażonych: byinfectedTodayArray[0].todayCases,
+              Potwierdzonych: byinfectedTodayArray[0].todayCases,
               zgonów: byinfectedTodayArray[0].todayDeaths,
             },
             {
               name: byinfectedTodayArray[1].country,
-              zakażonych: byinfectedTodayArray[1].todayCases,
+              Potwierdzonych: byinfectedTodayArray[1].todayCases,
               zgonów: byinfectedTodayArray[1].todayDeaths,
             },
             {
               name: byinfectedTodayArray[2].country,
-              zakażonych: byinfectedTodayArray[2].todayCases,
+              Potwierdzonych: byinfectedTodayArray[2].todayCases,
               zgonów: byinfectedTodayArray[2].todayDeaths,
             },
             {
               name: byinfectedTodayArray[3].country,
-              zakażonych: byinfectedTodayArray[3].todayCases,
+              Potwierdzonych: byinfectedTodayArray[3].todayCases,
               zgonów: byinfectedTodayArray[3].todayDeaths,
             },
             {
               name: byinfectedTodayArray[4].country,
-              zakażonych: byinfectedTodayArray[4].todayCases,
+              Potwierdzonych: byinfectedTodayArray[4].todayCases,
               zgonów: byinfectedTodayArray[4].todayDeaths,
             },
             {
               name: byinfectedTodayArray[5].country,
-              zakażonych: byinfectedTodayArray[5].todayCases,
+              Potwierdzonych: byinfectedTodayArray[5].todayCases,
               zgonów: byinfectedTodayArray[5].todayDeaths,
             },
           ])
@@ -283,7 +283,7 @@ const IndexPage = () => {
               <span className="flex flex-row ">
                 {" "}
                 <FaExclamation style={{ marginTop: "3px" }} />{" "}
-                {lang ? "Zakażonych: " : "Infected: "}
+                {lang ? "Potwierdzonych: " : "Infected: "}
                 {poland.cases ? (
                   poland.cases
                 ) : (
@@ -295,7 +295,7 @@ const IndexPage = () => {
             <div className="bar shadow-md bg-purple-600 stat-item">
               <span className="flex flex-row">
                 <FaExclamation style={{ marginTop: "3px" }} />{" "}
-                {lang ? "Zakażonych dziś: " : "Infected today: "}
+                {lang ? "Potwierdzonych dziś: " : "Infected today: "}
                 {poland.todayCases ||
                 poland.todayCases == [] ||
                 poland.todayCases > 0 ? (
@@ -374,7 +374,7 @@ const IndexPage = () => {
             <div className="bar shadow-md bg-purple-600">
               <span className="flex flex-row">
                 <FaExclamation style={{ marginTop: "3px" }} />{" "}
-                {lang ? "Zakażonych: " : "Infected: "}
+                {lang ? "Potwierdzonych: " : "Infected: "}
                 {totalInfected > 0 ? (
                   totalInfected
                 ) : (
@@ -385,7 +385,7 @@ const IndexPage = () => {
             <div className="bar shadow-md bg-purple-600">
               <span className="flex flex-row">
                 <FaExclamation style={{ marginTop: "3px" }} />{" "}
-                {lang ? " Zakażonych dziś: " : "Infected today : "}
+                {lang ? " Potwierdzonych dziś: " : "Infected today : "}
                 {totalInfectedToday > 0 ? (
                   totalInfectedToday
                 ) : (
@@ -455,7 +455,7 @@ const IndexPage = () => {
               <YAxis />
               <Tooltip />
               <Legend className="" />
-              <Bar dataKey="zakażonych" fill="#805BD5" />
+              <Bar dataKey="Potwierdzonych" fill="#805BD5" />
               <Bar dataKey="zgonów" fill="#F56565" />
               <Bar dataKey="wyleczonych" fill="#4FD1C5" />
             </BarChart>
@@ -478,7 +478,7 @@ const IndexPage = () => {
               <YAxis />
               <Tooltip />
               <Legend className="" />
-              <Bar dataKey="zakażonych" fill="#805BD5" />
+              <Bar dataKey="Potwierdzonych" fill="#805BD5" />
               <Bar dataKey="zgonów" fill="#F56565" />
             </BarChart>
           </ResponsiveContainer>
@@ -576,14 +576,14 @@ const IndexPage = () => {
 
               <div class="text-purple-800 flex flex-col text-sm">
                 <div className="flex flex-row justify-between text-purple-600">
-                  <span> {lang ? "Zakażonych: " : "Infected: "}</span>
+                  <span> {lang ? "Potwierdzonych: " : "Infected: "}</span>
                   <span className="font-black">{item.cases}</span>
                 </div>
 
                 <div className="flex flex-row justify-between text-purple-600">
                   <span>
                     {" "}
-                    {lang ? "Zakażonych dzis: " : "Infected today: "}
+                    {lang ? "Potwierdzonych dzis: " : "Infected today: "}
                   </span>{" "}
                   <span className="font-black">{item.todayCases}</span>
                 </div>

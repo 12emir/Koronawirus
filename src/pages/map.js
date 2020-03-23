@@ -29,7 +29,7 @@ const Map = () => {
       <div style={{ height: "85vh", width: "100%" }}>
         <div className="legenda flex text-center text-white text-sm  ">
           <div className="bg-purple-500 w-1/3 h-full  flex justify-center items-center content-center">
-            Chorzy
+            Potwierdzone
           </div>
           <div className="bg-pink-500 w-1/3 flex justify-center items-center content-center">
             Zgony
