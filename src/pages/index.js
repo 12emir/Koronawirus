@@ -259,7 +259,7 @@ const IndexPage = () => {
       <button className="lang" onClick={langSwitcher}>
         {lang ? "English" : "Polski"}
       </button>
-      <div className="mt-2 -mb-2 ">
+      <div className="mt-4 -mb-2 ">
         {" "}
         Aktualizacja:{" "}
         {lastUpdated ? (
