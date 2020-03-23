@@ -141,7 +141,9 @@ const Wykresy = ({ lang }) => {
       </ResponsiveContainer>
       <div className="pt-8">
         <span className="font-bold text-purple-800  rounded-md px-3  text-2xl uppercase">
-          {lang ? "Zachorowania łącznie w Polsce" : "Poland - Total infections"}
+          {lang
+            ? " Zachorowania łącznie w Polsce"
+            : "Poland - Total infections"}
         </span>
       </div>
       <ResponsiveContainer
