@@ -1,7 +1,6 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
-import { GiVirus } from "react-icons/gi"
 
 const Header = ({ siteTitle }) => (
   <header className="bg-purple-800 ">
@@ -17,7 +16,7 @@ const Header = ({ siteTitle }) => (
         <span className="flex flex-row">Koronawirus COVID-19</span>
       </h1>
       <span className="text-white text-sm">
-        Najświeższe info o jeb@#!ym wirusie.
+        Najświeższe info o koronawirusie.
       </span>
       <div className="flex items-left  pl-2 mt-3">
         <a href="/">

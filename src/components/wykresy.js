@@ -19,8 +19,8 @@ const Wykresy = ({ lang }) => {
     await fetch("https://thevirustracker.com/free-api?countryTimeline=pl").then(
       response => {
         response.json().then(async function(info) {
-          const dates = Object.keys(info.timelineitems[0])
-          const values = Object.values(info.timelineitems[0])
+          const dates = await Object.keys(info.timelineitems[0])
+          const values = await Object.values(info.timelineitems[0])
           await setInfectedDaily([
             {
               name: dates[dates.length - 12],
