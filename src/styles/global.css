@@ -4,15 +4,6 @@
 
 @tailwind utilities;
 
-html,
-body,
-input::placeholder {
-  font-family: "Poppins", sans-serif;
-}
-
-input::placeholder {
-}
-
 @-webkit-keyframes rotating /* Safari and Chrome */ {
   from {
     -webkit-transform: rotate(0deg);
@@ -48,8 +39,61 @@ input::placeholder {
   -o-animation: rotating 1s linear infinite;
   animation: rotating 1s linear infinite;
   margin-left: 10px;
+  margin-top: 5px;
 }
 
 .big {
   font-size: 35px !important;
+}
+
+.lang {
+  position: absolute;
+  padding: 15px;
+  top: 45px;
+  right: 15px;
+  color: white;
+  font-size: 14px;
+  font-weight: 100;
+}
+
+.bar {
+  border-radius: 9px;
+  padding: 13px 15px;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 15px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+
+html,
+body,
+input {
+  font-family: poppins;
+}
+html {
+  background: rgba(0, 0, 0, 0.03);
+}
+input::placeholder {
+  font-size: 13px !important;
+  letter-spacing: 1px;
+}
+.search-icon {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  font-size: 20px;
+  font-weight: 200;
+}
+input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.item-marker {
+  min-width: 200px;
+}
+.legenda {
+  height: 4vh;
 }
