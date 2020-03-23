@@ -208,8 +208,7 @@ const IndexPage = () => {
       })
       .then(info => {})
   }, [])
-  console.log("Deaths", byDeaths)
-  console.log("reoverercd", byRecovered)
+
   const totalInfectedHandler = async () => {
     let totalCases = 0
     let totalTodayCases = 0

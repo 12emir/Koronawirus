@@ -21,12 +21,17 @@ const Header = ({ siteTitle }) => (
       <div className="flex items-left  pl-2 mt-3">
         <a href="/">
           <button className="py-1 px-3 bg-white text-color-purple-500 rounded text-sm mr-2">
-            Home
+            Stats
           </button>
         </a>
         <a href="/map">
+          <button className="py-1 px-3 bg-white text-color-purple-500 rounded text-sm mr-2">
+            Mapa
+          </button>
+        </a>
+        <a href="/news">
           <button className="py-1 px-3 bg-white text-color-purple-500 rounded text-sm">
-            Mapa zachorowań
+            News
           </button>
         </a>
       </div>
