@@ -26,7 +26,7 @@ const Header = ({ siteTitle }) => (
         </a>
         <a href="/map">
           <button className="py-1 px-3 bg-purple-600 text-purple-200  font-hairline uppercase rounded-lg text-sm mr-2">
-            Mapa
+            Map
           </button>
         </a>
         <a href="/news">
