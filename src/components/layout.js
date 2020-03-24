@@ -58,10 +58,10 @@ const Layout = ({ children }) => {
             </a>
 
             <a
-              className="mt-4 text-lg uppercase text-purple-700 mb-8"
+              className="mt-4 text-md uppercase text-purple-700 mb-8"
               href="mailto:emir.alobedi@gmail.com"
             >
-              Kontakt
+              Contact
             </a>
           </div>
         </footer>
