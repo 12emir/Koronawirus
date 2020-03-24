@@ -609,33 +609,6 @@ const IndexPage = () => {
           </div>
         ))}
       </div>
-      <div className="w-full text-center mt-8 flex flex-col text-xs">
-        <span className="font-bold uppercase text-purple-700 ">Donate</span>
-        <div>BTC: 1LTS5Zoc4Edp3yUAr39K2sbqxrU9R6YyAu</div>
-        <div>ETH: 0x6007687862f310aab1c153441b5c2d29ad333ef5</div>
-        <div>USDT: 0x6007687862f310aab1c153441b5c2d29ad333ef5</div>
-        <span className="font-bold uppercase text-purple-700 mt-8 ">API</span>
-        <a href="https://thevirustracker.com/api">
-          https://thevirustracker.com/api
-        </a>
-        <a href="https://coronavirus-19-api.herokuapp.com/countries">
-          https://coronavirus-19-api.herokuapp.com/countries
-        </a>
-        <a
-          href="       https://coronavirus-tracker-api.herokuapp.com/v2/locations
-"
-        >
-          {" "}
-          https://coronavirus-tracker-api.herokuapp.com/v2/locations
-        </a>
-
-        <a
-          className="mt-4 text-lg uppercase text-purple-700 mb-8"
-          href="mailto:emir.alobedi@gmail.com"
-        >
-          Kontakt
-        </a>
-      </div>
     </Layout>
   )
 }
