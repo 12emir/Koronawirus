@@ -14,7 +14,7 @@ const Map = () => {
     ).then(response => {
       response.json().then(async function(data) {
         let places = data.locations
-        const sliced = places.slice(1, 100)
+        const sliced = places.slice(1, 190)
 
         await setLocations(sliced)
       })
