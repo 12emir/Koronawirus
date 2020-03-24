@@ -20,17 +20,17 @@ const Header = ({ siteTitle }) => (
       </span>
       <div className="flex items-left  pl-2 mt-3">
         <a href="/">
-          <button className="py-1 px-3 bg-white text-color-purple-500 rounded text-sm mr-2">
+          <button className="py-1 px-3 bg-purple-600 text-purple-200 font-hairline uppercase rounded-lg text-sm mr-2 tracking-wide">
             Stats
           </button>
         </a>
         <a href="/map">
-          <button className="py-1 px-3 bg-white text-color-purple-500 rounded text-sm mr-2">
+          <button className="py-1 px-3 bg-purple-600 text-purple-200  font-hairline uppercase rounded-lg text-sm mr-2 tracking-wide">
             Mapa
           </button>
         </a>
         <a href="/news">
-          <button className="py-1 px-3 bg-white text-color-purple-500 rounded text-sm">
+          <button className="py-1 px-3 bg-purple-600 text-purple-200 font-hairline  uppercase rounded-lg text-sm tracking-wide">
             News
           </button>
         </a>

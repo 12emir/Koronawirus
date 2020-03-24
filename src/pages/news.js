@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react"
 import SEO from "../components/seo"
 import Layout from "../components/layout"
 import ContentLoader from "react-content-loader"
-
+import gsap, { Back } from "gsap"
 const News = () => {
   const [news, setNews] = useState([])
   const [sorted, setSorted] = useState([])
@@ -17,6 +17,13 @@ const News = () => {
               .reverse()
               .slice(0, 90)
           )
+          var tl = gsap.timeline()
+          tl.staggerFrom(
+            ".item",
+            0.8,
+            { x: -30, opacity: 0, ease: Back.easeOut },
+            0.05
+          )
         })
       }
     )
@@ -26,10 +33,7 @@ const News = () => {
     <Layout className="bg-gray-100">
       <SEO title="Koronawirus mapa zachorowań i zgonów " />
       <div className="pl-3">
-        <h1 className="font-bold mt-4 text-2xl text-teal-500">Latest news</h1>
-        <h2 className="text-purple-800 text-xs uppercase">
-          Coronawirus Covid-19
-        </h2>
+        <h1 className="font-bold mt-4 text-2xl text-teal-400">Latest news</h1>
       </div>
       {sorted.length < 1 ? (
         <ContentLoader
@@ -86,12 +90,12 @@ const News = () => {
           return (
             <div
               key={item.newsid}
-              className=" w-full sm:w-full md:w-1/2 lg:w-1/4 xl:w-1/5  p-3 "
+              className="item w-full sm:w-full md:w-1/3 lg:w-1/4 xl:w-1/5  p-3    rounded-lg "
             >
               <a href={item.url} target="_blank">
                 <div
                   key={item.newsid}
-                  className="h-full bg-white shadow-xl rounded-lg overflow-hidden pb-3  "
+                  className="h-full bg-white flex flex-col justify-between items-start content-start shadow-md hover:shadow-xl transform hover:-translate-y-1 transition duration-500 rounded-lg overflow-hidden pb-3  "
                 >
                   <div
                     style={{
@@ -99,14 +103,21 @@ const News = () => {
                       backgroundSize: "cover",
                       backgroundPosition: "50%, 50%",
                     }}
-                    className="w-full h-56 md:h-348 lg:h-32 xl:h-32 mb-2"
+                    className="w-full h-64 md:h-40 lg:h-40 xl:h-40 mb-2"
                   ></div>
-                  <span className="uppercase text-teal-400 pl-3  text-sm ">
-                    {item.time}
+                  <span className=" text-teal-400 p-1 px-3 text-xs   absolute top-0 right-0 bg-purple-700 font-hairline rounded-lg ">
+                    {item.time.slice(0, item.time.length - 10)}{" "}
+                    <span className=" text-white ml-1">
+                      {" "}
+                      {item.time.slice(item.time.length - 4, item.time.length)}
+                    </span>
                   </span>
-                  <h3 className="text-sm text-purple-700 pl-3 font-hairline pr-3">
+                  <h3 className="text-xs text-gray-700 pl-3  py-2 pr-3 leading-tight tracking-wide">
                     {item.title}
                   </h3>
+                  <span className=" ml-3 text-xs flex-initial  font-hairline text-purple-500 bg-gray-100 p-1 px-2 rounded-lg ">
+                    Read more
+                  </span>
                 </div>
               </a>
             </div>
