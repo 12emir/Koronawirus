@@ -105,17 +105,17 @@ const News = () => {
                     }}
                     className="w-full h-64 md:h-40 lg:h-40 xl:h-40 mb-2"
                   ></div>
-                  <span className=" text-teal-400 p-1 px-3 text-xs   absolute top-0 right-0 bg-purple-700 font-hairline rounded-lg ">
+                  <span className=" text-teal-400 p-1 px-3 text-sm  absolute top-0 right-0 bg-purple-700 font-hairline rounded-lg ">
                     {item.time.slice(0, item.time.length - 10)}{" "}
                     <span className=" text-white ml-1">
                       {" "}
                       {item.time.slice(item.time.length - 4, item.time.length)}
                     </span>
                   </span>
-                  <h3 className="text-xs text-gray-700 pl-3  py-2 pr-3 leading-tight tracking-wide">
+                  <h3 className="text-sm text-gray-700 pl-3  py-2 pr-3 leading-tight font-thin tracking-wide">
                     {item.title}
                   </h3>
-                  <span className=" ml-3 text-xs flex-initial  font-hairline text-purple-500 bg-gray-100 p-1 px-2 rounded-lg ">
+                  <span className=" ml-3 text-sm flex-initial  font-hairline text-purple-500 bg-gray-100 p-1 px-2 rounded-lg ">
                     Read more
                   </span>
                 </div>
