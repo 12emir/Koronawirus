@@ -19,21 +19,29 @@ const Header = ({ siteTitle }) => (
         Najświeższe info o koronawirusie.
       </span>
       <div className="flex items-left  pl-2 mt-3">
-        <a href="/">
-          <button className="py-1 px-3 bg-purple-600 text-purple-200 font-hairline uppercase rounded-lg text-sm mr-2 tracking-wide">
+        <nav>
+          <Link
+            className="py-1 px-3 bg-purple-600 hover:bg-purple-500 text-purple-200 font-hairline uppercase rounded-lg text-sm mr-2 tracking-wide"
+            to="/"
+            activeStyle={{ color: "purple", background: "white" }}
+          >
             Stats
-          </button>
-        </a>
-        <a href="/map">
-          <button className="py-1 px-3 bg-purple-600 text-purple-200  font-hairline uppercase rounded-lg text-sm mr-2 tracking-wide">
+          </Link>
+          <Link
+            className="py-1 px-3 bg-purple-600 hover:bg-purple-500 text-purple-200 font-hairline uppercase rounded-lg text-sm mr-2 tracking-wide"
+            to="/map"
+            activeStyle={{ color: "purple", background: "white" }}
+          >
             Mapa
-          </button>
-        </a>
-        <a href="/news">
-          <button className="py-1 px-3 bg-purple-600 text-purple-200 font-hairline  uppercase rounded-lg text-sm tracking-wide">
+          </Link>
+          <Link
+            className="py-1 px-3 bg-purple-600 hover:bg-purple-500 text-purple-200 font-hairline uppercase rounded-lg text-sm mr-2 tracking-wide"
+            to="/news"
+            activeStyle={{ color: "purple", background: "white" }}
+          >
             News
-          </button>
-        </a>
+          </Link>
+        </nav>
       </div>
     </div>
   </header>

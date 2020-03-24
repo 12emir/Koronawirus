@@ -21,8 +21,8 @@ const News = () => {
           tl.staggerFrom(
             ".item",
             0.8,
-            { x: -30, opacity: 0, ease: Back.easeOut },
-            0.05
+            { x: -40, opacity: 0, ease: Back.easeOut, delay: 0.2 },
+            0.08
           )
         })
       }
