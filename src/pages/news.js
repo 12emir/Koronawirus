@@ -12,7 +12,11 @@ const News = () => {
       response => {
         response.json().then(async data => {
           setNews(data.countrynewsitems[0])
-          setSorted(Object.values(data.countrynewsitems[0]).reverse())
+          setSorted(
+            Object.values(data.countrynewsitems[0])
+              .reverse()
+              .slice(0, 90)
+          )
         })
       }
     )
@@ -33,6 +37,8 @@ const News = () => {
           height={900}
           width={1360}
           speed={1}
+          backgroundColor="#e2e4e4"
+          foregroundColor="#f5f5f5"
         >
           <rect x="30" y="20" rx="8" ry="8" width="200" height="200" />
           <rect x="30" y="250" rx="0" ry="0" width="200" height="18" />
